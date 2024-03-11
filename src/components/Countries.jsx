@@ -16,7 +16,7 @@ const Countries = () => {
   }, []);
 
   return (
-    <div className="my-10">
+    <div className="grid grid-cols-1 my-10 lg:grid-cols-2 xl:grid-cols-3">
       {countries.map((country, idx) => {
         return <CountryCard key={idx} country={country} />;
       })}
